@@ -15,10 +15,8 @@ public class JUnitQuiz {
         assertThat(name3).isNotNull();
 
         assertThat(name1).isEqualTo(name2);
-
         assertThat(name1).isNotEqualTo(name3);
     }
-
 
     @Test
     public void junitQuiz2() {
@@ -26,25 +24,19 @@ public class JUnitQuiz {
         int number2 = 0;
         int number3 = -5;
 
-
         // ❶ number1은 양수인지 확인
         assertThat(number1).isPositive();
-
 
         // ❷ number2은 0인지 확인
         assertThat(number2).isZero();
 
-
         // ❸ number3은 음수인지 확인
         assertThat(number3).isNegative();
 
-
         // ❹ number1은 number2보다 큰지 확인
-        assertThat(number1).isGreaterThan(nu mber2);
-
+        assertThat(number1).isGreaterThan(number2);
 
         // ❺ number3은 number2보다 작은지 확인
         assertThat(number3).isLessThan(number2);
-
     }
 }
